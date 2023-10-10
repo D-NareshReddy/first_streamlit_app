@@ -20,7 +20,8 @@ def get_fruityvice_data(this_fruit_choice):
      # Taking the Json Data and normalize that. 
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
      # populating the data in good manner.
-    returns fruityvice_normalized
+    return fruityvice_normalized
+    
 streamlit.header("Fruityvice Fruit Advice!")
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?')
